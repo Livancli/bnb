@@ -11,11 +11,11 @@
 <body>
 
   <nav id="navBar" class="navbar-white">
-    <img src="img/logo-red.png" class="logo" alt="logo" />
+    <a href="./index.html"><img src="img/logo-red.png" class="logo" alt="logo" /></a>        
     <ul class="nav-links">
-      <li><a href="#" class="active">Popular Places</a></li>
-      <li><a href="#">Travel Outside</a></li>
-      <li><a href="#">Online Packages </a></li>
+      <li><a href="index.html">Popular Places</a></li>
+      <li><a href="house.html">Travel Outside</a></li>
+      <li><a href="listing.html" class="active">Online Packages </a></li>
     </ul>
     <a href="#" class="register-btn">Register Now</a>
     <div class="toggle"><i class="fa fa-bars"></i></div>
@@ -225,19 +225,7 @@
   </footer>
 </div>
 
-  <script>
-  let btn = document.querySelector(".toggle");
-let icon = btn.querySelector(".fa-bars");
-let nav = document.getElementById("navBar");
+  <script src="menuBar.js"></script>
 
-btn.onclick = function(){
-  nav.classList.toggle("hidemenu");
-  if(icon.classList.contains("fa-bars")){
-    icon.classList.replace("fa-bars", "fa-times");
-  }else{
-    icon.classList.replace("fa-times", "fa-bars");      
-  }
-}
-  </script>
 </body>
 </html>
